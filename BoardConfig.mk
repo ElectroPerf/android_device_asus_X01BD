@@ -16,5 +16,8 @@ TARGET_OTA_ASSERT_DEVICE := ASUS_X01BD,X01BD
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Inherit the proprietary files
 -include vendor/asus/X01BD/BoardConfigVendor.mk

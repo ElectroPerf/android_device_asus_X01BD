@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "X01BDSystemUI",
+    product_specific: true,
+    sdk_version: "current",
+}

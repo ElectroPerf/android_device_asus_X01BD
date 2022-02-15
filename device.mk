@@ -8,11 +8,11 @@
 $(call inherit-product, device/asus/sdm660-common/sdm660.mk)
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
-
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay
+    X01BDFrameworksResTarget \
+    X01BDNoCutoutOverlay \
+    X01BDSystemUI \
+    X01BDWifiOverlay
 
 # Ramdisk
 PRODUCT_PACKAGES += \
@@ -21,10 +21,6 @@ PRODUCT_PACKAGES += \
 # Thermal configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
-
-# Wifi
-PRODUCT_PACKAGES += \
-    X01BDWifiOverlay
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/asus/X01BD/X01BD-vendor.mk)

@@ -16,7 +16,7 @@ PRODUCT_PACKAGES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
-    init.device.rc
+    init.asus.rc
 
 # Thermal configs
 PRODUCT_COPY_FILES += \
